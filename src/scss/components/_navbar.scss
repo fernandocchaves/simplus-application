@@ -1,0 +1,30 @@
+/**
+ * Bootstrap navbar overrides
+ */
+.main-navbar {
+
+	.container {
+		padding: 0;
+	}
+
+	.navbar{
+
+		border-radius: 0;
+
+		&.navbar-inverse {
+			background-color: $brand-primary;
+			border: none;
+		}
+
+		.navbar-brand {
+			padding: 0 0 0 20px;
+		}
+
+		.logo {
+			font-family: 'Yesteryear', cursive;
+			margin: 0;
+			padding-top: 8px;
+			color: $brand-clear;
+		}
+	}
+}

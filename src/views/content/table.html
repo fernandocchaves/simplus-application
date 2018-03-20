@@ -1,0 +1,27 @@
+<div class="container">
+    <table class="table table-striped" ng-repeat="compositions in listCtrl.compositions">
+        <thead>
+            <tr>
+                <th width="55%">GTIN</th>
+                <th width="15%">Unidade da Embalagem</th>
+                <th width="15%">Quantidade da Embalagem</th>
+                <th width="15%">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="composition in compositions">
+                <td style="padding-left: {{composition.level * 50 + 10}}px;">{{composition.code}}</td>
+                <td>{{composition.packing}}</td>
+                <td>{{composition.quantity}}</td>
+                <td>
+                    <button class="btn btn-warning" ng-click="listCtrl.showForm(null, composition.id)"><i class="glyphicon glyphicon-link"></i></button>
+                    <button class="btn btn-warning" ng-click="listCtrl.showForm(composition)"><i class="glyphicon glyphicon-pencil"></i></button>
+                    <button ng-show="composition.level == 0" ng-click="listCtrl.delete(composition.id)" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="btn btn-warning pull-right" ng-click="listCtrl.showForm()"><i class="glyphicon glyphicon-plus"></i></button>
+    
+</div>

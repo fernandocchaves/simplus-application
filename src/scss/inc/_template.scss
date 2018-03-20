@@ -1,0 +1,50 @@
+/**
+ * Template definitions.
+ */
+
+ label {
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	background-color: $body-bg;
+	color: $brand-secondary;
+}
+
+ .table {
+    border: 1px solid #de0000;
+    margin-top: 30px;
+    tr {
+        border: none;
+    }
+    thead tr th {
+        background: #de0000;
+        color: #fff;
+        vertical-align: middle;
+        border: none;
+    }
+
+    tbody tr td {
+        border: none;
+        vertical-align: middle;
+        color: #85777d;
+        &:first-child {
+            color: #b4203b;
+        }
+    }
+
+    &.table-striped tbody tr {
+        background: #f2f2f2;
+    }
+
+    &.table-striped tbody tr:nth-of-type(odd) {
+        background: #fff;
+    }
+}
+
+.modal-content {
+    color: #000;
+}

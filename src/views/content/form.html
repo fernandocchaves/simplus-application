@@ -1,0 +1,146 @@
+<div class="modal-header">
+        <h3>Dados Logísticos</h3>
+    </div>
+    <form name="form.composition" ng-submit="submitForm()" novalidate>
+        <div class="modal-body">
+            <div class="form-group pull-right">
+                    <button class="btn btn-default" ng-click="cancel()">Cancelar</button>
+                    <button type="submit" class="btn btn-warning" ng-disabled="form.composition.$invalid">Salvar</button>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="form-group">
+                <div class="col-md-4 text-right">
+                    <label>Código DUN *</label>  
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="code" class="form-control" ng-model="composition.code" required>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4 text-right">
+                    <label>Un. Embalagem *</label>  
+                </div>
+                <div class="col-md-3">
+                    <select name="packing" class="form-control" ng-model="composition.packing" required>
+                        <option value="CAIXA">CAIXA</option>
+                        <option value="PACK">PACK</option>
+                        <option value="UNIDADE">UNIDADE</option>
+                    </select>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4 text-right">
+                    <label>Quantidade *</label>  
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="quantity" class="form-control" ng-model="composition.quantity" required>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4 text-right">
+                    <label>Altura *</label>  
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="height" class="form-control" ng-model="composition.height" required>
+                </div>
+                <div class="col-md-3">
+                    <select name="height_measure" class="form-control" ng-model="composition.heightMeasure" required>
+                        <option value="cm">Centímetro(s)</option>
+                        <option value="m">Metro(s)</option>
+                        <option value="g">Grama(s)</option>
+                        <option value="kg">Kilograma(s)</option>
+                    </select>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+    
+            <div class="form-group">
+                <div class="col-md-4 text-right">
+                    <label>Largura *</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="width" class="form-control" ng-model="composition.width" required>
+                </div>
+                <div class="col-md-3">
+                    <select name="width_measure" class="form-control" ng-model="composition.widthMeasure" required>
+                        <option value="cm">Centímetro(s)</option>
+                        <option value="m">Metro(s)</option>
+                        <option value="g">Grama(s)</option>
+                        <option value="kg">Kilograma(s)</option>
+                    </select>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4 text-right">
+                    <label>Profundidade *</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="depth" class="form-control" ng-model="composition.depth" required>
+                </div>
+                <div class="col-md-3">
+                    <select name="depth_measure" class="form-control" ng-model="composition.depthMeasure" required>
+                        <option value="cm">Centímetro(s)</option>
+                        <option value="m">Metro(s)</option>
+                        <option value="g">Grama(s)</option>
+                        <option value="kg">Kilograma(s)</option>
+                    </select>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4 text-right">
+                    <label>Peso Bruto *</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="gross_weight" class="form-control" ng-model="composition.grossWeight" required>
+                </div>
+                <div class="col-md-3">
+                    <select name="gross_weight_measure" class="form-control" ng-model="composition.grossWeightMeasure" required>
+                        <option value="cm">Centímetro(s)</option>
+                        <option value="m">Metro(s)</option>
+                        <option value="g">Grama(s)</option>
+                        <option value="kg">Kilograma(s)</option>
+                    </select>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4 text-right">
+                    <label>Peso Líquido *</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="net_weight" class="form-control" ng-model="composition.netWeight" required>
+                </div>
+                <div class="col-md-3">
+                    <select name="net_weight_measure" class="form-control" ng-model="composition.netWeightMeasure" required>
+                        <option value="cm">Centímetro(s)</option>
+                        <option value="m">Metro(s)</option>
+                        <option value="g">Grama(s)</option>
+                        <option value="kg">Kilograma(s)</option>
+                    </select>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default" ng-click="cancel()">Cancelar</button>
+            <button type="submit" class="btn btn-warning" ng-disabled="form.composition.$invalid">Salvar</button>
+        </div>
+    </form>

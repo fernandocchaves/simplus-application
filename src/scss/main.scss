@@ -1,0 +1,11 @@
+/**
+ * Require here all your sass includes.
+ */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import 'inc/variables';
+@import 'inc/helpers';
+@import 'inc/template';
+
+@import 'components/navbar';
+@import 'components/shot-card';
